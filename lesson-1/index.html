@@ -9,7 +9,67 @@ relesed to support these without relying on third party programs that HTML 4 doe
 		<title>My first website</title>
 	</head>
 	<body>
-		hello there
+		<h1>hello there</h1>
+		<h2>hello there</h2>
+		<h6>hello there</h6>
+<!-- The difference between just adding text and using a ptag is that there are inherent CSS properties to the ptag which are
+
+p {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+The Difference between
+<b></b>
+<i></i>
+vs
+<strong>
+</strong>
+</em>
+</em>
+is that the first set may not work for all mobile devices so they used set 2 to support those.
+
+
+ -->
+		<p><em><strong>Lorem ipsum</strong></em> dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<ol>
+			<li>One</li>
+			<li>Two</li>
+			<li>Three</li>
+		</ol>
+
+		<ul>
+			<li>One</li>
+			<li>Two</li>
+			<!-- Nested List -->
+				<ul>
+					<li>Two - One</li>
+					<li>Two - Two</li>
+					<li>Two - Three</li> 
+				</ul>
+			<li>Three</li>
+			<!-- Attributes add special properties to specific tag and always have values attached to it-->
+			<!-- Alt specifices an alternate text for an image when the user cannot render the image -->
+			<li><img src="http://r.ddmcdn.com/s_f/o_1/APL/uploads/2014/10/best-place-to-put-a-litter-box0.jpg" alt="This is a cat"></li>
+		</ul>
+<!-- SELF CLOSING TAGS -->
+	<!-- Break so everything starts on a new line -->
+		<br>
+	<!-- Horizontal Line -->
+		<hr>
+
+<!-- Anchor Tage -->
+	 	<a href="https://google.com">Google</a><br>
+	 	<a href="./page2/index2.html">Page 2</a>
 	</body>
 
 </html>
