@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Register</title>
+	</head>
+	<body>
+	<!-- method attribute is the method that is used when a form is submitted -->
+	<!-- GET wil create a querystring and attach it to the url upon submission like a querystring -->
+	<!-- POST will attach the values of the form to the body of the post -->
+		<form method="GET">
+			<label>First Name:</label>
+			<input type="text" name="firstname"><br>
+			<label>Last Name:</label>
+			<input type="text" name="lastname"><br>
+			<label>Email:</label>
+			<!-- We don't need to assume a value for required attr -->
+			<!-- Input type email is for text inputs specifically for emails -->
+			<!-- it will do the checking for you -->
+			<input type="email" name="email" required><br>
+			<label> Password: </label>
+			<input type="password" min="8" name="password"><br>
+			<label>Date: </label>
+			<input type="date" name="date"><br>
+			<!-- TO ONLY SELECT ONE ITEM IN THE RADIO FORM, YOU NEED TO SPECIFY name attribute with same value-->
+			<label>Gender: </label><br>
+			<label> Male </label>
+			<input type="radio" value="Male" name="gender"><br>
+			<label> Female </label>
+			<input type="radio" value="Female" name="gender"><br>
+			<label> Other </label>
+			<input type="radio" value="Other" name="gender"><br>
+			<label> Pets: </label><br>
+			<label> Cats </label>
+			<input type="checkbox" value="Cats" name="cats"><br>
+			<label> Dogs </label>
+			<input type="checkbox" value="Dogs" name="dogs"><br>
+			<label>Cars:</label><br>
+			<select>
+				<option value="Volvo" name="volvo">Volvo</option>
+				<option value="Camry" name="camry">Camry</option>
+			</select><br>
+			<input type="submit" value="Register">
+			<input type="reset" value="Reset">
+		</form>
+	</body>
+</html>
+
