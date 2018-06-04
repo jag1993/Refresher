@@ -8,6 +8,11 @@
 	<!-- method attribute is the method that is used when a form is submitted -->
 	<!-- GET wil create a querystring and attach it to the url upon submission like a querystring -->
 	<!-- POST will attach the values of the form to the body of the post -->
+	<!-- action attribute will tell form to run file specified in action once the form is submitted -->
+	<!-- DIV divides content per section and we can add styles to the div using CSS -->
+	<div>
+	<!-- SPAN IS LIKE DIV BUT ONLY INLINE -->
+		<span>Test</span>
 		<form method="GET">
 			<label>First Name:</label>
 			<input type="text" name="firstname"><br>
@@ -23,6 +28,7 @@
 			<label>Date: </label>
 			<input type="date" name="date"><br>
 			<!-- TO ONLY SELECT ONE ITEM IN THE RADIO FORM, YOU NEED TO SPECIFY name attribute with same value-->
+			<!-- IN FORMS ALWAYS PUT name attribute as same name of the field ex( in gender field, the name of each input is gender) name so upon submission we can associate the values to the appropriate field -->
 			<label>Gender: </label><br>
 			<label> Male </label>
 			<input type="radio" value="Male" name="gender"><br>
@@ -32,17 +38,29 @@
 			<input type="radio" value="Other" name="gender"><br>
 			<label> Pets: </label><br>
 			<label> Cats </label>
-			<input type="checkbox" value="Cats" name="cats"><br>
+			<input type="checkbox" value="Cats" name="pets"><br>
 			<label> Dogs </label>
-			<input type="checkbox" value="Dogs" name="dogs"><br>
+			<input type="checkbox" value="Dogs" name="pets"><br>
 			<label>Cars:</label><br>
 			<select>
-				<option value="Volvo" name="volvo">Volvo</option>
-				<option value="Camry" name="camry">Camry</option>
+				<option name="cars" value="volvo">Volvo</option>
+				<option name="cars" value="camry">Camry</option>
 			</select><br>
 			<input type="submit" value="Register">
 			<input type="reset" value="Reset">
+			<!--
+				? starts a query string
+				its always attribute then value
+
+				?firstname=Jose
+				&lastname=Garcia
+				&email=joseabgweb%40gmail.com
+				&password=12345678
+				&date=2018-12-31
+				&gender=Male
+				&pets=Cats -->
 		</form>
+	</div>
 	</body>
 </html>
 
