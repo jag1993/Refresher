@@ -1,0 +1,53 @@
+/* CSS is cascading meaning it takes the last input it receives as input */
+/* Selector reference */
+
+body {
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Cumulus_clouds_panorama.jpg/2880px-Cumulus_clouds_panorama.jpg');
+	background-size: cover;
+}
+h2 {
+	color: red;
+	text-align: center;
+	border:2px solid purple;
+	cursor: pointer;
+}
+
+p {
+	color: pink;
+}
+
+li {
+	list-style:none;
+	display: inline-block;
+}
+
+div > p {
+	color:green;
+}
+
+/* Types of colors */
+/* Hex colors #000000 */
+/* RGB rgb(255,255,255) */
+/* RGBA rgba(255,255,255,0.5) <- Last number is Opacity*/
+/* * selector symbolizes all elements */
+
+/*This selector means that its all p's inside div*/
+
+/* div p {
+	text-align: center;
+}
+
+/* This selector means all p's with a parent of div */
+
+/* div > p {
+	text-align: center;
+}*/
+
+/* This selector means any p tag thats after divs */
+/* div + p {
+	text-align: center;
+}
+
+/* div +p :hover applies styles only if hovered */
+/* div + p: first-child / last-child only applies styles on first or last child*/
+
